@@ -14,10 +14,11 @@ bot.on("message",function(message) {
   if (message.author.equals(bot.user)) return;
 
   if (!message.content.startsWith(prefix)) return;
+  
+   bot.user.setStatus("Idle");
 
   var args = message.content.substring(prefix.length).split(" ");
   
-  bot.user.setGame("./help for help");
   
   switch (args[0].toLowerCase()) {
     case "ping":
