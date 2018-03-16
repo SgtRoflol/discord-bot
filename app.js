@@ -16,7 +16,9 @@ bot.on("message",function(message) {
   if (!message.content.startsWith(prefix)) return;
 
   var args = message.content.substring(prefix.length).split(" ");
-
+  
+  bot.user.setGame("./help for help");
+  
   switch (args[0].toLowerCase()) {
     case "ping":
     message.channel.send("pong!");
