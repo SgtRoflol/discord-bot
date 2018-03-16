@@ -7,7 +7,7 @@ bot.on("ready", function() {
   console.log("ready");
 });
 
-client.user.setPresence({game:{name: "./help for help"}})
+
 
 bot.on("guildMemberAdd", function(member) {
   member.guild.channels.find("name", "general").sendMessage(member.toString() + " hi o/ this server is cool plz no leave");
