@@ -14,8 +14,7 @@ bot.on("message",function(message) {
   if (message.author.equals(bot.user)) return;
 
   if (!message.content.startsWith(prefix)) return;
-  
-   client.user.setGame("./help for help");
+
 
   var args = message.content.substring(prefix.length).split(" ");
   
