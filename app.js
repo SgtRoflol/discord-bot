@@ -18,6 +18,7 @@ bot.on("message",function(message) {
 
   var args = message.content.substring(prefix.length).split(" ");
 
+  client.User.setGame('./help for help');
   
   switch (args[0].toLowerCase()) {
     case "ping":
