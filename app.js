@@ -26,7 +26,6 @@ bot.on("message",function(message) {
 var time = Date.now();
 message.delete();
       message.channel.send("spaaace",{file: "https://i.pinimg.com/originals/a9/ef/38/a9ef38cdc7125701e1c939e10489c7b3.gif"})
-             .then(msg=>msg.edit(`${msg.contents} took ${Date.now() - time}`));
       break;
 
       case "help":
