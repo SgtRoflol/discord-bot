@@ -51,6 +51,7 @@ message.delete();
     break;
 
     case"info":
+      message.delete();
     message.channel.send({embed: {
       color: 0xffffff,
       author : {
