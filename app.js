@@ -26,13 +26,8 @@ bot.on("message",function(message) {
     case"space":
 var time = Date.now();
 message.delete();
-    if (message.member.roles.has("371668187957166082")) {
       message.channel.send("spaaace",{file: "https://i.pinimg.com/originals/a9/ef/38/a9ef38cdc7125701e1c939e10489c7b3.gif"})
              .then(msg=>msg.edit(`${msg.contents} took ${Date.now() - time}`));
-}
-else {
-  message.reply("DENIED!")
-}
       break;
 
       case "help":
@@ -46,12 +41,8 @@ else {
 
       case "hentai":
       message.delete();
-      if (message.member.roles.has("371668187957166082")){
       message.channel.send("https://www.youtube.com/watch?v=DBz2_FTeTKc&feature=youtu.be");
-    }
-    else {
-      message.channel.send("DENIED");
-    }
+      
       break;
 
 
