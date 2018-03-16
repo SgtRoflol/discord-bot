@@ -2,7 +2,7 @@ const Discord = require("discord.js"); // require discord.js
 const bot = new Discord.Client(); // create the discord client
 const client = bot
 ; // store the token in a variable
-const prefix = "!"
+const prefix = "./"
 bot.on("ready", function() {
   console.log("ready");
 });
