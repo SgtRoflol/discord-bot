@@ -17,7 +17,7 @@ bot.on("message",function(message) {
 
   if (!message.content.startsWith(prefix)) return;
 
-  bot.user.setPresence({ status: 'idle', game: { name: './help for help' } });
+  client.user.setPresence({ status:"online", game:{ name: "./help for help" }});
 
   var args = message.content.substring(prefix.length).split(" ");
 
@@ -28,7 +28,6 @@ bot.on("message",function(message) {
 
     case"space":
 var time = Date.now();
-message.delete();
       message.channel.send("spaaace",{file: "https://i.pinimg.com/originals/a9/ef/38/a9ef38cdc7125701e1c939e10489c7b3.gif"})
       break;
 
@@ -38,23 +37,19 @@ message.delete();
       message.author.send("`test` testmessage");
       message.author.send("`info` an info embed");
       message.author.send("`goodnight` goodnight");
-      message.delete();
       break;
 
       case "hentai":
-      message.delete();
       message.channel.send("https://www.youtube.com/watch?v=DBz2_FTeTKc&feature=youtu.be");
 
       break;
 
 
     case"test":
-    message.delete();
     message.reply("henlo o/");
     break;
 
     case"info":
-      message.delete();
     message.channel.send({embed: {
       color: 0xffffff,
       author : {
@@ -72,26 +67,13 @@ message.delete();
     break;
 
     case"time":
-    message.delete();
     var time = Date.now();
     message.channel.send("time")
     .then(msg=>msg.edit(msg + ' took ' + time));
     break;
 
     case"goodnight":
-    message.delete();
     message.channel.send("gnight o/");
-    break;
-
-    case "lol":
-    message.delete();
-    message.channel.send("lol");
-    break;
-
-    case"weeb":
-    message.author.send("https://www.youtube.com/watch?v=DBz2_FTeTKc&feature=youtu.be");
-    message.author.send("fucking weeb -.-");
-    message.delete();
     break;
 
 
