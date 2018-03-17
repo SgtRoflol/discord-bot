@@ -1,3 +1,4 @@
+const Discord = require("discord.js"); // require discord.js
 const bot = new Discord.Client(); // create the discord client
 const client = bot
 ; // store the token in a variable
