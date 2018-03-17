@@ -1,4 +1,3 @@
-const Discord = require("discord.js"); // require discord.js
 const bot = new Discord.Client(); // create the discord client
 const client = bot
 ; // store the token in a variable
@@ -6,7 +5,6 @@ const prefix = "./"
 bot.on("ready", function() {
   console.log("ready");
 });
-
 
 
 bot.on("guildMemberAdd", function(member) {
@@ -19,9 +17,9 @@ bot.on("message",function(message) {
   if (!message.content.startsWith(prefix)) return;
 
   bot.user.setPresence({ status: 'online', game: { name: './help for help' } });
-  
+
   var args = message.content.substring(prefix.length).split(" ");
-  
+
   switch (args[0].toLowerCase()) {
     case "ping":
     message.channel.send("pong!");
@@ -45,7 +43,7 @@ message.delete();
       case "hentai":
       message.delete();
       message.channel.send("https://www.youtube.com/watch?v=DBz2_FTeTKc&feature=youtu.be");
-      
+
       break;
 
 
