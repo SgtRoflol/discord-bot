@@ -17,7 +17,7 @@ bot.on("message",function(message) {
 
   if (!message.content.startsWith(prefix)) return;
 
-  bot.user.setPresence({ status: 'online', game: { name: './help for help' } });
+  bot.user.setPresence({ status: 'idle', game: { name: './help for help' } });
 
   var args = message.content.substring(prefix.length).split(" ");
 
