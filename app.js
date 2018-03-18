@@ -33,7 +33,7 @@ bot.on("message",function(message) {
     break;
 
     case"maintenance":
-    message.channel.send(message.author.toString() + " kek");
+    message.channel.send(message.author.id.toString() + " kek");
     break;
 
     case"space":
