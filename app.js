@@ -28,14 +28,8 @@ bot.on("message",function(message) {
 
     case"show":
     if(args[1].toLowerCase() = role) {
-      if(message.member.role.has(@&423899866884997121)){
-
-      message.channel.send("You are a moderator");
+      message.channel.send("kek");
     }
-    else{
-      message.channel.send("You are no moderator!");
-    }
-  }
     break;
 
     case"space":
