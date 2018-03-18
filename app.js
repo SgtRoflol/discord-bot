@@ -33,7 +33,12 @@ bot.on("message",function(message) {
     break;
 
     case"maintenance":
-    message.channel.send(message.author.id.toString() + " kek");
+    if(message.author.id.toString() = "329730038381543424"){
+      client.user.setPresence({ status:"online", game:{ name: "under maintenance" }});
+    }
+    else {
+      message.channel.send("nope!");
+    }
     break;
 
     case"space":
