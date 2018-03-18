@@ -27,9 +27,13 @@ bot.on("message",function(message) {
     break;
 
     case"show":
-    if(args[1].toLowerCase() = role) {
+    if(args[1].toLowerCase() = "role") {
       message.channel.send("kek");
     }
+    break;
+
+    case"maintenance":
+    message.channel.send(message.author);
     break;
 
     case"space":
