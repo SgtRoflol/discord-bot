@@ -35,6 +35,7 @@ bot.on("message",function(message) {
     case"maintenance":
     if(message.author.id.toString() = "329730038381543424"){
       client.user.setPresence({ status:"online", game:{ name: "under maintenance" }});
+      message.channel.send("Roflbot was set into maintenance");
     }
     else {
       message.channel.send("nope!");
