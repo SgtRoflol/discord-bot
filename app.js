@@ -26,6 +26,18 @@ bot.on("message",function(message) {
     message.channel.send("pong!");
     break;
 
+    case"show":
+    if(args[1].toLowerCase() = role) {
+      if(message.member.role.has(@&423899866884997121)){
+
+      message.channel.send("You are a moderator");
+    }
+    else{
+      message.channel.send("You are no moderator!");
+    }
+  }
+    break;
+
     case"space":
 var time = Date.now();
       message.channel.send("spaaace",{file: "https://i.pinimg.com/originals/a9/ef/38/a9ef38cdc7125701e1c939e10489c7b3.gif"})
