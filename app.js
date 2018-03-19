@@ -48,6 +48,7 @@ var time = Date.now();
       break;
 
       case "help":
+      message.channel.send("A help message has been sent.");
       message.author.send("commands:");
       message.author.send("`time` displays time it took to send the message");
       message.author.send("`test` testmessage");
